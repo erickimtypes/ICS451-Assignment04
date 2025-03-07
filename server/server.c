@@ -41,7 +41,7 @@ int main()
     printf("Client connected\n");
 
     // Send File
-    FILE *file = fopen("server_file.html", "r");
+    FILE *file = fopen("server_file.png", "r");
     int bytes;
     while ((bytes = fread(buffer, 1, BUFFER_SIZE, file)) > 0)
     {
