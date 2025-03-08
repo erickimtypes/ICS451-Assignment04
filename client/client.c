@@ -34,7 +34,7 @@ int main()
     printf("Connected to server!\n");
 
     // Receive File
-    FILE *file = fopen("file_client.png", "w");
+    FILE *file = fopen("client_file.png", "w");
     int bytes;
     while ((bytes = recv(client_fd, buffer, BUFFER_SIZE, 0)) > 0)
     {
