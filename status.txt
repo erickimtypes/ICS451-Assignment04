@@ -1,0 +1,9 @@
+The program runs correctly.
+
+Summarization of the program:
+1. The server is first started.
+2. The client is then started.
+3. The server sends server_file.png to the client.
+4. The client saves the received file as client_file.png.
+
+There are no known bugs right now.

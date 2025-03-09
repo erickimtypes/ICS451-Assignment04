@@ -1,3 +1,21 @@
+/**
+ * NAME        : Eric Kim
+ *
+ * HOMEWORK    : 04
+ *
+ * CLASS       : ICS 451
+ *
+ * INSTRUCTOR  : Ravi Narayan
+ *
+ * DATE        : 03/08/2025
+ *
+ * FILE        : server.c
+ *
+ * DESCRIPTION : This file contains the server-side implementation for a file transfer program in Homework 04.
+ *               It listens for incoming client connections, sends the specified file in chunks, and then closes the connection.
+ *
+ */
+
 #include <stdio.h>     // printf, perror
 #include <stdlib.h>    // exit()
 #include <string.h>    // strlen()
@@ -7,6 +25,11 @@
 #define PORT 25518 // The port nuymber the server will listen on
 #define BUFFER_SIZE 1024
 
+/**
+ * The main method to start the server.
+ *
+ * @param args Command line arguments. Expects no arguments.
+ */
 int main()
 {
     int server_fd, client_fd;       // Initialize server and client file descriptors

@@ -1,3 +1,21 @@
+/**
+ * NAME        : Eric Kim
+ *
+ * HOMEWORK    : 04
+ *
+ * CLASS       : ICS 451
+ *
+ * INSTRUCTOR  : Ravi Narayan
+ *
+ * DATE        : 03/08/2025
+ *
+ * FILE        : client.c
+ *
+ * DESCRIPTION : This file contains the client-side implementation for a file transfer program in Homework 04.
+ *               It establishes a TCP connection to the server, receives a file in chunks, and saves it as "client_file.png"
+ *
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -7,6 +25,11 @@
 #define PORT 25518
 #define BUFFER_SIZE 1024
 
+/**
+ * The main method to start the client.
+ *
+ * @param args Command line arguments. Does not expect any arguments
+ */
 int main()
 {
     int client_fd;
